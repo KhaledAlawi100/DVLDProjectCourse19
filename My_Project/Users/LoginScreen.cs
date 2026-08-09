@@ -47,10 +47,11 @@ namespace My_Project.Users
 
 
         }
+        string filePath = "D:\\2-prog Adv\\1-course19FullProject ProgAdv\\docsusers.txt";
+
 
         public void WriteUserToFile(string username, string password, int binaryFlag)
         {
-            string filePath = "D:\\2-prog Adv\\1- course 19 Full Project ProgAdv\\docsusers.txt";
             string line = $"{username},{password},{binaryFlag}";
 
             // ✅ Overwrites the file with a new single entry
@@ -59,7 +60,6 @@ namespace My_Project.Users
 
         private void LoadRememberedUser()
         {
-            string filePath = "D:\\2-prog Adv\\1- course 19 Full Project ProgAdv\\docsusers.txt";
 
             if (!File.Exists(filePath))
                 return;

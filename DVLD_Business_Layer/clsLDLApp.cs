@@ -21,7 +21,7 @@ namespace DVLD_Business_Layer
             this.ApplicationID = 0;
             this.LicenseClassID = 0;
 
-            Mode = clsGloabalBusiness.enMode.add;
+            Mode = clsUtility.enMode.add;
 
         
         }
@@ -34,7 +34,7 @@ namespace DVLD_Business_Layer
         {
             this.LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID;
             this.LicenseClassID = LicenseClassID;
-            Mode = clsGloabalBusiness.enMode.update;
+            Mode = clsUtility.enMode.update;
 
         }
 
@@ -102,8 +102,7 @@ namespace DVLD_Business_Layer
         }
         public bool Save()
         {
-            clsGloabalBusiness.AddNewAction addNewLDLApp = _AddNewLDLApp;
-            return clsGloabalBusiness.Save(this.Mode, addNewLDLApp, null);
+            return clsUtility.Save(this.Mode, _AddNewLDLApp, null);
         }
         public static string ErrorMessage;
         public static bool Delete(int ID) { 

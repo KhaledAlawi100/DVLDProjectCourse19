@@ -14,7 +14,7 @@ namespace DVLD_Business_Layer
 
         //public enum enMode { Addnew=0 , Update=1};
 
-        private clsGloabalBusiness.enMode _Mode = clsGloabalBusiness.enMode.add;
+        private clsUtility.enMode _Mode = clsUtility.enMode.add;
 
         public int TestAppointmentID { get; set; }
 
@@ -35,7 +35,7 @@ namespace DVLD_Business_Layer
 
         public clsTestAppointment()
         {
-            _Mode = clsGloabalBusiness.enMode.add;
+            _Mode = clsUtility.enMode.add;
 
         }
 
@@ -51,7 +51,7 @@ namespace DVLD_Business_Layer
             IsLocked = isLocked;
             RetakeTestApplicationID = retakeTestApplicationID;
 
-            _Mode = clsGloabalBusiness.enMode.update;
+            _Mode = clsUtility.enMode.update;
         }
 
         public static clsTestAppointment Find(int TestAppointmentID )
@@ -124,9 +124,7 @@ namespace DVLD_Business_Layer
 
         public bool Save()
         {
-            clsGloabalBusiness.AddNewAction addNewTestAppointment = _AddNewTestAppointment;
-            clsGloabalBusiness.UpdateAction updateTestAppointment = _UpdateTestAppointment;
-            return clsGloabalBusiness.Save(_Mode, addNewTestAppointment, updateTestAppointment);
+            return clsUtility.Save(_Mode, _AddNewTestAppointment, _UpdateTestAppointment);
         }
 
     }

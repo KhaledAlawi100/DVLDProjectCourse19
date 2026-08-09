@@ -28,7 +28,7 @@ namespace DVLD_Business_Layer
             
             //public enum enMode { AddNew =0, Update = 1 }
 
-            clsGloabalBusiness.enMode mode = clsGloabalBusiness.enMode.add;
+            clsUtility.enMode mode = clsUtility.enMode.add;
 
 
 
@@ -45,7 +45,7 @@ namespace DVLD_Business_Layer
             this.DetainID = DetainID;
             this.LicenseID = LicenseID;
 
-            this.mode = clsGloabalBusiness.enMode.update;
+            this.mode = clsUtility.enMode.update;
 
             this.DetainDate = DetainDate;
 
@@ -147,28 +147,7 @@ namespace DVLD_Business_Layer
 
         public bool Save()
         {
-
-            clsGloabalBusiness.AddNewAction addNewDetainLicense = AddNewDetainLicense;
-
-            clsGloabalBusiness.UpdateAction updateDetainLicense = UpdateDetainLicense;
-
-            return clsGloabalBusiness.Save(this.mode, addNewDetainLicense, updateDetainLicense);
-            //switch (this.mode)
-            //{
-            //    case enMode.AddNew:
-            //        if (AddNewDetainLicense())
-            //        {
-            //            this.mode = enMode.Update; 
-            //            return true;
-            //        }
-            //        return false;
-
-            //    case enMode.Update:
-            //        return UpdateDetainLicense();
-
-            //    default:
-            //        return false;
-            //}
+            return clsUtility.Save(this.mode, AddNewDetainLicense, UpdateDetainLicense);
         }
 
 

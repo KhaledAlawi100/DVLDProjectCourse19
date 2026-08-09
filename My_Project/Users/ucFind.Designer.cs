@@ -105,18 +105,18 @@
             // 
             // ucPersonInformation1
             // 
-            this.ucPersonInformation1.Address = null;
-            this.ucPersonInformation1.Country = null;
-            this.ucPersonInformation1.DateOfBirth = null;
-            this.ucPersonInformation1.Email = null;
-            this.ucPersonInformation1.FullName = null;
-            this.ucPersonInformation1.Gender = null;
-            this.ucPersonInformation1.ID = null;
-            this.ucPersonInformation1.ImagePath = null;
+            //this.ucPersonInformation1.Address = null;
+            //this.ucPersonInformation1.Country = null;
+            //this.ucPersonInformation1.DateOfBirth = null;
+            //this.ucPersonInformation1.Email = null;
+            //this.ucPersonInformation1.FullName = null;
+            //this.ucPersonInformation1.Gender = null;
+            //this.ucPersonInformation1.ID = null;
+            //this.ucPersonInformation1.ImagePath = null;
             this.ucPersonInformation1.Location = new System.Drawing.Point(3, 118);
             this.ucPersonInformation1.Name = "ucPersonInformation1";
-            this.ucPersonInformation1.NationalNumber = null;
-            this.ucPersonInformation1.Phone = null;
+            //this.ucPersonInformation1.NationalNumber = null;
+            //this.ucPersonInformation1.Phone = null;
             this.ucPersonInformation1.Size = new System.Drawing.Size(932, 353);
             this.ucPersonInformation1.TabIndex = 1;
             this.ucPersonInformation1.Load += new System.EventHandler(this.ucPersonInformation1_Load_1);

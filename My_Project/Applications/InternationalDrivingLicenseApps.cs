@@ -75,8 +75,7 @@ namespace My_Project.Applications
 
 
                 
-            PersonDetails frm = new PersonDetails( p1.PersonID.ToString() , p1.NationalNumber , p1.FirstName , p1.SecondName,p1.ThirdName,
-                p1.LastName,p1.DateOfBirth.ToString(),p1.Gender==0?"Male":"Female",p1.Address,p1.Phone,p1.Email,clsCountry.Find(p1.NationalityCountryID).countryName,p1.ImagePath);
+            PersonDetails frm = new PersonDetails( p1.PersonID);
 
             frm.ShowDialog();
         }

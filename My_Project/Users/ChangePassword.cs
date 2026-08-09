@@ -29,23 +29,8 @@ namespace My_Project.Users
         }
         private void ChangePassword_Load(object sender, EventArgs e)
         {
-            ucLoginInfo1.ucPersonInformation1.ID= this.PersonID.ToString();
-             _Person = clsPerson.Find(this.PersonID);
 
-            ucLoginInfo1.ucPersonInformation1.NationalNumber = _Person.NationalNumber;
-            ucLoginInfo1.ucPersonInformation1.FullName = _Person.FirstName+" "+_Person.SecondName+" "+_Person.ThirdName+" "+_Person.LastName;
-            if (_Person.Gender == 0)
-                ucLoginInfo1.ucPersonInformation1.Gender = "Male";
-            else
-                ucLoginInfo1.ucPersonInformation1.Gender = "Female";
-            ucLoginInfo1.ucPersonInformation1.Phone = _Person.Phone;
-            ucLoginInfo1.ucPersonInformation1.Email = _Person.Email;
-            ucLoginInfo1.ucPersonInformation1.Address = _Person.Address;
-            ucLoginInfo1.ucPersonInformation1.DateOfBirth = _Person.DateOfBirth.ToString("yyyy-MM-dd");
-            clsCountry c1 = clsCountry.Find(_Person.NationalityCountryID);
-            ucLoginInfo1.ucPersonInformation1.Country = c1.countryName;
-            ucLoginInfo1.ucPersonInformation1.ImagePath = _Person.ImagePath;
-
+            ucLoginInfo1.ucPersonInformation1.PersonID= this.PersonID;
             ucLoginInfo1.ucPersonInformation1.RefreshUI();
 
             ucLoginInfo1.UserID = this.UserID;

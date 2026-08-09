@@ -25,3 +25,12 @@ D:\2-prog Adv\1- course 19 Full Project ProgAdv\DVLD_Business_Layer\obj\Debug\DV
 D:\2-prog Adv\1- course 19 Full Project ProgAdv\DVLD_Business_Layer\obj\Debug\DVLD_Bus.9D06BE66.Up2Date
 D:\2-prog Adv\1- course 19 Full Project ProgAdv\DVLD_Business_Layer\obj\Debug\DVLD_Business_Layer.dll
 D:\2-prog Adv\1- course 19 Full Project ProgAdv\DVLD_Business_Layer\obj\Debug\DVLD_Business_Layer.pdb
+D:\2-prog Adv\1-course19FullProject ProgAdv\DVLD_Business_Layer\bin\Debug\DVLD_Business_Layer.dll
+D:\2-prog Adv\1-course19FullProject ProgAdv\DVLD_Business_Layer\bin\Debug\DVLD_Business_Layer.pdb
+D:\2-prog Adv\1-course19FullProject ProgAdv\DVLD_Business_Layer\bin\Debug\DVLD_Data_Layer.dll
+D:\2-prog Adv\1-course19FullProject ProgAdv\DVLD_Business_Layer\bin\Debug\DVLD_Data_Layer.pdb
+D:\2-prog Adv\1-course19FullProject ProgAdv\DVLD_Business_Layer\obj\Debug\DVLD_Business_Layer.csproj.AssemblyReference.cache
+D:\2-prog Adv\1-course19FullProject ProgAdv\DVLD_Business_Layer\obj\Debug\DVLD_Business_Layer.csproj.CoreCompileInputs.cache
+D:\2-prog Adv\1-course19FullProject ProgAdv\DVLD_Business_Layer\obj\Debug\DVLD_Bus.9D06BE66.Up2Date
+D:\2-prog Adv\1-course19FullProject ProgAdv\DVLD_Business_Layer\obj\Debug\DVLD_Business_Layer.dll
+D:\2-prog Adv\1-course19FullProject ProgAdv\DVLD_Business_Layer\obj\Debug\DVLD_Business_Layer.pdb

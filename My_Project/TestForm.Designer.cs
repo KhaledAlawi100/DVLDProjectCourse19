@@ -58,6 +58,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.lbCountryname = new System.Windows.Forms.Label();
             this.txGetCountryID = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -310,11 +312,31 @@
             this.txGetCountryID.Size = new System.Drawing.Size(260, 24);
             this.txGetCountryID.TabIndex = 29;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(840, 432);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 30;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(933, 339);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 31;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1207, 463);
+            this.ClientSize = new System.Drawing.Size(1207, 617);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.txGetCountryID);
             this.Controls.Add(this.lbCountryname);
             this.Controls.Add(this.button2);
@@ -385,5 +407,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lbCountryname;
         private System.Windows.Forms.TextBox txGetCountryID;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

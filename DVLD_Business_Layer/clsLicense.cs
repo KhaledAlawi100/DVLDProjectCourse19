@@ -36,7 +36,7 @@ namespace DVLD_Business_Layer
 
         //public enum enMode { AddNew=0, Update=1 }
 
-        private clsGloabalBusiness.enMode _Mode = clsGloabalBusiness.enMode.add;
+        private clsUtility.enMode _Mode = clsUtility.enMode.add;
 
         
 
@@ -62,7 +62,7 @@ namespace DVLD_Business_Layer
             this.IssueReason = IssueReason;
             this.CreatedByUserID = CreatedByUserID;
 
-            this._Mode= clsGloabalBusiness.enMode.update;
+            this._Mode= clsUtility.enMode.update;
 
         }
 
@@ -128,9 +128,7 @@ namespace DVLD_Business_Layer
         
         public bool Save()
         {
-            clsGloabalBusiness.AddNewAction addLicense = AddNewLicense;
-            clsGloabalBusiness.UpdateAction updateLicense = UpdateLicense;
-            return clsGloabalBusiness.Save(_Mode, addLicense, updateLicense);
+            return clsUtility.Save(_Mode, AddNewLicense, UpdateLicense);
         }
 
         public static DataTable GetAllLicensesByDriverID(int DriverID)

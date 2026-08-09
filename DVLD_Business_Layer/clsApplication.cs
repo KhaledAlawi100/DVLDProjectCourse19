@@ -12,7 +12,7 @@ namespace DVLD_Business_Layer
     {
         //public enum enMode { AddNew = 0 , Update=1};
 
-        protected clsGloabalBusiness.enMode Mode = clsGloabalBusiness.enMode.add;
+        protected clsUtility.enMode Mode = clsUtility.enMode.add;
 
         public int ApplicationID {  get; set; }
 
@@ -40,7 +40,7 @@ namespace DVLD_Business_Layer
             LastStatusDate = DateTime.Now;
             PaidFees = 0;
             CreatedByUserID = 0;
-            Mode = clsGloabalBusiness.enMode.add;
+            Mode = clsUtility.enMode.add;
 
         }
 
@@ -63,7 +63,7 @@ namespace DVLD_Business_Layer
 
             this.CreatedByUserID = CreatedByUserID;
 
-            Mode = clsGloabalBusiness.enMode.update;
+            Mode = clsUtility.enMode.update;
         }
 
         public static clsApplication Find(int ApplicationID)
@@ -95,9 +95,7 @@ namespace DVLD_Business_Layer
 
         public bool Save()
         {
-            clsGloabalBusiness.AddNewAction addNewApplication = AddNewApplication;
-            clsGloabalBusiness.UpdateAction updateApplication = UpdateApplication;
-            return clsGloabalBusiness.Save(this.Mode, addNewApplication,updateApplication );
+            return clsUtility.Save(this.Mode, AddNewApplication, UpdateApplication);
         }
 
         private bool AddNewApplication()

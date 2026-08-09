@@ -12,6 +12,7 @@ using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Krypton.Toolkit;
 
 namespace My_Project
 {
@@ -182,6 +183,11 @@ namespace My_Project
         {
             ListDetainedLicenses frm = new ListDetainedLicenses();
             frm.ShowDialog();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

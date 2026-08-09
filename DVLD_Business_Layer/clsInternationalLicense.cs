@@ -29,11 +29,11 @@ namespace DVLD_Business_Layer
 
         //public enum enMode { AddNew=0, Update=1 }
 
-        clsGloabalBusiness.enMode _Mode = clsGloabalBusiness.enMode.add;
+        clsUtility.enMode _Mode = clsUtility.enMode.add;
 
         public clsInternationalLicense() { 
 
-            _Mode = clsGloabalBusiness.enMode.add;
+            _Mode = clsUtility.enMode.add;
         
         }
 
@@ -48,7 +48,7 @@ namespace DVLD_Business_Layer
             IsActive = isActive;
             CreatedByUserID = createdByUserID;
 
-            _Mode= clsGloabalBusiness.enMode.update;
+            _Mode= clsUtility.enMode.update;
 
         }
 
@@ -93,9 +93,7 @@ namespace DVLD_Business_Layer
 
         public bool Save()
         {
-            clsGloabalBusiness.AddNewAction addNewLicense = _AddNewInterNaionalLicense;
-            clsGloabalBusiness.UpdateAction updateLicense = _UpdateInterNationalLicense;
-            return clsGloabalBusiness.Save(_Mode, addNewLicense, updateLicense);
+            return clsUtility.Save(_Mode, _AddNewInterNaionalLicense, _UpdateInterNationalLicense);
         }
 
         public static bool IsExist(int DriverID)

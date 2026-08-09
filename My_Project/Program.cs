@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Krypton.Toolkit;
 
 namespace My_Project
 {
@@ -17,6 +18,10 @@ namespace My_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            KryptonManager manager = new KryptonManager();
+            manager.GlobalPaletteMode = PaletteMode.Office2010Blue;
+
             Application.Run(new LoginScreen());
         }
     }

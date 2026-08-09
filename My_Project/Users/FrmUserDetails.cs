@@ -26,7 +26,7 @@ namespace My_Project.Users
         {
             
 
-            ucLoginInfo1.ucPersonInformation1.RefreshUI(PersonID);
+            ucLoginInfo1.ucPersonInformation1.RefreshUI();
 
             clsUser u1 = clsUser.Find(UserID);
 
@@ -40,6 +40,11 @@ namespace My_Project.Users
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ucLoginInfo1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

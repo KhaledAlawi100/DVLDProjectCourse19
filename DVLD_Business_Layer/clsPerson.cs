@@ -12,7 +12,7 @@ namespace DVLD_Business_Layer
     {
         //public enum enMode {AddNew=0 , Update=1 };
 
-        clsGloabalBusiness.enMode mode = clsGloabalBusiness.enMode.add;
+        clsUtility.enMode mode = clsUtility.enMode.add;
 
         public int PersonID { get; set; }
 
@@ -62,7 +62,7 @@ namespace DVLD_Business_Layer
 
             //this.mode = enMode.AddNew;
 
-            this.mode = clsGloabalBusiness.enMode.add;
+            this.mode = clsUtility.enMode.add;
 
 
 
@@ -89,7 +89,7 @@ namespace DVLD_Business_Layer
             this.ImagePath = ImagePath;
 
             //this.mode = enMode.Update;
-            this.mode = clsGloabalBusiness.enMode.update;
+            this.mode = clsUtility.enMode.update;
 
         }
 
@@ -162,11 +162,11 @@ namespace DVLD_Business_Layer
 
         public bool Save()
         {
-            clsGloabalBusiness.AddNewAction addNew = _AddNewPerson;
+            //clsUtility.AddNewAction addNew = _AddNewPerson;
 
-            clsGloabalBusiness.UpdateAction updatePerson = _UpdatePerson;
+            //clsUtility.UpdateAction updatePerson = _UpdatePerson;
 
-            return clsGloabalBusiness.Save(this.mode, addNew, updatePerson);
+            return clsUtility.Save(this.mode, _AddNewPerson, _UpdatePerson);
 
             //switch (mode)
             //{

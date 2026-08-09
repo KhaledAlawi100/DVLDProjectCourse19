@@ -41,6 +41,7 @@
             this.ucLoginInfo1.TabIndex = 0;
             this.ucLoginInfo1.UserID = 0;
             this.ucLoginInfo1.UserName = null;
+            this.ucLoginInfo1.Load += new System.EventHandler(this.ucLoginInfo1_Load);
             // 
             // button1
             // 

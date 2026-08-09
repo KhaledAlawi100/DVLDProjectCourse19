@@ -50,28 +50,10 @@ namespace My_Project.Users
             {
                 IsFound = true;
                 PersonID = p1.PersonID;
-                ucPersonInformation1.ID = p1.PersonID.ToString();
 
-                string FullName = p1.FirstName + " " + p1.SecondName + " " + p1.ThirdName + " " + p1.LastName;
+                ucPersonInformation1.PersonID = p1.PersonID;
 
-                ucPersonInformation1.FullName = FullName;
-                ucPersonInformation1.NationalNumber = p1.NationalNumber;
-
-                if (p1.Gender == 0)
-                    ucPersonInformation1.Gender = "Male";
-                else
-                    ucPersonInformation1.Gender = "Female";
-
-                ucPersonInformation1.Email = p1.Email;
-                ucPersonInformation1.Address = p1.Address;
-                ucPersonInformation1.DateOfBirth = p1.DateOfBirth.ToString("yyyy-MM-dd");
-                ucPersonInformation1.Phone = p1.Phone;
-                clsCountry c1 = clsCountry.Find(p1.NationalityCountryID);
-                string CountryName = c1.countryName;
-
-                ucPersonInformation1.Country = CountryName;
-
-                ucPersonInformation1.ImagePath = p1.ImagePath;
+                
 
                 ucPersonInformation1.RefreshUI();
 

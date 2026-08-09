@@ -14,7 +14,7 @@ namespace DVLD_Business_Layer
 
         //public enum enMode { AddNew = 0, Update = 1 };
 
-        clsGloabalBusiness.enMode _Mode = clsGloabalBusiness.enMode.add;
+        clsUtility.enMode _Mode = clsUtility.enMode.add;
         public int UserID {  get; set; }
 
         public int PersonID {  get; set; }
@@ -28,7 +28,7 @@ namespace DVLD_Business_Layer
         public clsUser() { 
         
             IsActive = false;
-            _Mode = clsGloabalBusiness.enMode.add;
+            _Mode = clsUtility.enMode.add;
             UserID = -1;
             PersonID = -1;
             UserName ="";
@@ -45,7 +45,7 @@ namespace DVLD_Business_Layer
             IsActive = isActive;
             this.Password = password;
 
-            _Mode = clsGloabalBusiness.enMode.update;
+            _Mode = clsUtility.enMode.update;
         }
 
         
@@ -123,9 +123,7 @@ namespace DVLD_Business_Layer
 
         public bool Save()
         {
-            clsGloabalBusiness.AddNewAction addNewUser = _AddNewUser;
-            clsGloabalBusiness.UpdateAction update = _UpdateUser;
-            return clsGloabalBusiness.Save(_Mode, addNewUser, update );
+            return clsUtility.Save(_Mode, _AddNewUser, _UpdateUser);
         }
 
         public static bool DeleteUser(int UserID,ref int ExceptionNumber) { 

@@ -10,10 +10,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using Krypton.Toolkit;
+
 
 namespace My_Project.Users
 {
-    public partial class Manage_People : Form
+    public partial class Manage_People : KryptonForm
     {
         private DataTable listOfPeople;
 
@@ -265,9 +267,7 @@ namespace My_Project.Users
                 gender = "Female";
             string dobString = p1.DateOfBirth.ToString("yyyy-MM-dd");
 
-            PersonDetails frm = new PersonDetails(p1.PersonID.ToString(), p1.NationalNumber,
-                p1.FirstName, p1.SecondName, p1.ThirdName, p1.LastName, dobString,
-                gender, p1.Address, p1.Phone,p1.Email, (string)dataGridView1.CurrentRow.Cells[8].Value, p1.ImagePath);
+            PersonDetails frm = new PersonDetails(p1.PersonID);
             frm.ShowDialog();
 
         }

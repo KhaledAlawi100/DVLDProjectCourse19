@@ -414,5 +414,10 @@ namespace My_Project.Users
             btnSave.Enabled = EnableSaveButton();
 
         }
+
+        private void cbCountry_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
