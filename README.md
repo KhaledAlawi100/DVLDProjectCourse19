@@ -1358,19 +1358,6 @@ DVLD
 
 If you restore the provided database backup, make sure the restored database uses this name.
 
-### Important Security Note
-
-Do **not** commit real database credentials to a public GitHub repository.
-
-Before publishing the project, replace any real credentials with placeholders or move sensitive configuration into a local configuration mechanism.
-
-For example:
-
-```text
-Server=<YOUR-SERVER>;
-Database=DVLD;
-User Id=<YOUR-USER>;
-Password=<YOUR-PASSWORD>;
 ```
 
 ---
@@ -1467,7 +1454,6 @@ For example:
 ![License Management](docs/screenshots/license-management.png)
 ```
 
-> **Note:** Actual screenshots should be added to the repository before enabling these image references.
 
 ---
 
